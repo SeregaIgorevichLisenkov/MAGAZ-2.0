@@ -1,18 +1,23 @@
+/* Устанавливаем стиль контейнера и обнуляем стили по умолчанию */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Устанавливаем стиль для обертки (контейнера, который выравнивает элементы по центру) */
 .wrapper {
     display: grid;
     align-items: center;
 }
 
+/* Устанавливаем минимальную высоту контента равной высоте экрана минус высота футера */
 .content_2 {
     min-height: calc(100vh - 50px);
 }
 
+/* Устанавливаем стиль для футера */
 .footer {
     color: #FFFFFF;
     text-align: center;
@@ -21,47 +26,58 @@
     height: 50px;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    padding: 0;
-    background-image:
-        url("img/background_pattern_6.png"),
-        linear-gradient(45deg,
-            #647A9B 0%,
-            #C8DEFF 25%,
-            #FFFFFF 50%,
-            #FFDEC8 75%,
-            #9B7A64 100%);
-    background-attachment: fixed;
+/* Устанавливаем общий стиль для всего документа */ 
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    height: 100vh; 
+    padding: 0; 
+    /* Устанавливаем фоновое изображение и градиентный фон*/
+    background-image: url("img/background_pattern_6.png"),
+    linear-gradient(45deg,
+        #647A9B 0%, 
+        #C8DEFF 25%, 
+        #FFFFFF 50%, 
+        #FFDEC8 75%, 
+        #9B7A64 100%);
+    /* Устанавливаем фоновое изображение на фиксированное место */ 
+    background-attachment: fixed; 
+    /* Устанавливаем цвет текста */
     color: #9B7A64;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 200px;
-    margin-bottom: 0px;
-    height: 100px;
-    border: 1px solid #9B7A64;
-    background-color: #FFDEC855;
-    box-shadow: 0 3px 6px #9B7A6455;
+/* Устанавливаем стиль для хедера */ 
+header { display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0px 200px; 
+    margin-bottom: 0px; 
+    height: 100px; 
+    border: 1px solid #9B7A64; 
+    /* Устанавливаем бордер */ 
+    background-color: #FFDEC855; 
+    /* Устанавливаем цвет фона */ 
+    box-shadow: 0 3px 6px #9B7A6455; 
+    /* Добавляем тень */
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 200px;
-    margin-top: 10px;
-    height: 40px;
-    border: 1px solid #647A9B;
-    background-color: #C8DEFF55;
-    box-shadow: 0 3px 6px #647A9B55;
+/* Устанавливаем стиль для футера */ 
+footer { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0px 200px; 
+    margin-top: 10px; 
+    height: 40px; 
+    border: 1px solid #647A9B; 
+    /* Устанавливаем бордер */ 
+    background-color: #C8DEFF55; 
+    /* Устанавливаем цвет фона */ 
+    box-shadow: 0 3px 6px #647A9B55; 
+    /* Добавляем тень */
     color: #647A9B;
 }
 
+/* Устанавливаем стиль для навигации */
 nav ul {
     display: flex;
     list-style: none;
@@ -78,6 +94,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Устанавливаем стиль для основного контента */
 main {
     margin: 20px 100px;
 }
@@ -87,6 +104,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* Устанавливаем стиль для таблиц */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -96,7 +114,7 @@ th {
     padding: 10px;
     text-align: center;
     border: 1px solid #9B7A64;
-    }
+}
 
 td {
     padding: 10px;
@@ -121,6 +139,7 @@ tfoot td {
     color: #FFFFFF;
 }
 
+/* Устанавливаем стиль для счетчика товаров */
 #cart-count {
     font-weight: bold;
     color: red;
@@ -132,38 +151,35 @@ tfoot td {
     top: 20px;
     z-index: 1;
 }
+
+/* Устанавливаем стиль для кнопок */
 /*
 button {
-    text-align: center;
-    border: none;
+    /text-align: center;/ border: none;
     padding: 5px;
     border-radius: 5px;
     color: #FFFFFF;
     cursor: pointer;
-    background-color: #9B7A64;
-        top: 2px;
-        box-shadow: 0 5px 0px #4D3721;
-        transition-property: all;
-        transition-duration: 0.5s;
-        transition-delay: 0s;
+    background-color: #9B7A64;/top: 2px;/ box-shadow: 0 5px 0px #4D3721;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
 }
 
 button:hover {
-    text-align: center;
-    border: none;
+    /text-align: center;/ border: none;
     padding: 5px;
     border-radius: 5px;
     color: #FFFFFF;
-    cursor: pointer;
-        top: 0px;
-        box-shadow: 0 3px 0px #4D3721;
-        background-color: #FF7A64;
-}*/
+    cursor: pointer;/top: 0px;/ box-shadow: 0 3px 0px #4D3721;
+    background-color: #FF7A64;
+}   
+/*
 
-/*  CATALOG  */
+/* Устанавливаем стиль для каталога товаров */
 .product-items {
     display: grid;
-grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr);
+    grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr);
     grid-gap: 5px;
     gap: 5px;
     justify-content: space-evenly;
@@ -184,30 +200,29 @@ grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr);
 
 .card:hover {
     transition: transform .1s;
-    
-        &::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
-            box-shadow: 0 3px 6px #9B7A6455, 0 3px 18px #9B7A64;
-            content: '';
-            opacity: 0;
-            z-index: -1;
-        }
-    
-        &:hover,
-        &:focus {
-            transform: scale3d(1.01, 1.01, 1);
-    
-            &::after {
-                opacity: 0;
-            }
-        }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+        box-shadow: 0 3px 6px #9B7A6455, 0 3px 18px #9B7A64;
+        content: '';
+        opacity: 0;
+        z-index: -1;
     }
 
+    &:hover,
+    &:focus {
+        transform: scale3d(1.01, 1.01, 1);
+
+        &::after {
+            opacity: 0;
+        }
+    }
+}
 
 .card img {
     max-width: 100%;

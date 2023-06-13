@@ -1,6 +1,6 @@
 .parallax {
     height: 500px;
-    /* fallback for older browsers */
+    /* запасной вариант для старых браузеров */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -10,7 +10,7 @@
 .parallax__group {
     position: relative;
     height: 500px;
-    /* fallback for older browsers */
+    /* запасной вариант для старых браузеров */
     height: 100vh;
     transform-style: preserve-3d;
 }
@@ -46,7 +46,7 @@
 
 #group1 {
     z-index: 5;
-    /* slide over group 2 */
+    /* слайд над группой 2 */
 }
 
 #group1 .parallax__layer--base {
@@ -55,7 +55,7 @@
 
 #group2 {
     z-index: 3;
-    /* slide under groups 1 and 3 */
+    /* слайд под группами 1 и 3 */
 }
 
 #group2 .parallax__layer--back {
@@ -64,7 +64,7 @@
 
 #group3 {
     z-index: 4;
-    /* slide over group 2 and 4 */
+    /* слайд над группой 2 и 4 */
 }
 
 #group3 .parallax__layer--base {
@@ -73,7 +73,7 @@
 
 #group4 {
     z-index: 2;
-    /* slide under group 3 and 5 */
+    /* слайд под группами 3 и 5 */
 }
 
 #group4 .parallax__layer--deep {
@@ -82,7 +82,7 @@
 
 #group5 {
     z-index: 3;
-    /* slide over group 4 and 6 */
+    /* слайд над группами 4 и 6 */
 }
 
 #group5 .parallax__layer--base {
@@ -91,7 +91,7 @@
 
 #group6 {
     z-index: 2;
-    /* slide under group 5 and 7 */
+    /* слайд под группами 5 и 7 */
 }
 
 #group6 .parallax__layer--back {
@@ -100,7 +100,7 @@
 
 #group7 {
     z-index: 3;
-    /* slide over group 7 */
+    /* слайд группы 7 */
 }
 
 #group7 .parallax__layer--base {
@@ -125,7 +125,7 @@ body {
     font-size: 200%;
 }
 
-/* centre the content in the parallax layers */
+/* центрируем содержимое в слоях параллакса */
 .title {
     text-align: center;
     position: absolute;
@@ -133,4 +133,3 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
