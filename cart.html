@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Корзина</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+	<div class="content">
+		<header>
+			<img class="logo" src="img/logo.png" alt="Логотип">
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="cart.html">Корзина(<span id="cart-count">0</span>)</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+<!--	MAIN	-->
+			<h1>Корзина</h1>
+			<table id="cart-table">
+				<thead>
+					<tr>
+						<th>Наименование</th>
+						<th>Количество</th>
+						<th>Цена</th>
+						<th>Сумма</th>
+						<th>Удалить</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Общая сумма:</td>
+						<td id="total-price">0</td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+		</main>
+<!--	MAIN	-->
+	</div>
+	<div class="footer">
+		<footer>
+			<p>© Мой интернет магазин, 2023</p>
+		</footer>
+	</div>
+	</div>
+<script src="cart.js"></script>
+</body>
+</html>
